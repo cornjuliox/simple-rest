@@ -9,9 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-register": "^6.26.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "prompt": "^1.0.0",
     "sequelize": "^4.7.5",
-    "sqlite3": "^3.1.9"
+    "sqlite3": "^3.1.9",
+    "stackjs": "^0.1.0"
   }
 }

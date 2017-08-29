@@ -69,6 +69,15 @@ router.route('/users/:user_id')
                 res.json({message: 'error occurred', error: err})
             })
     })
+    .delete((req, res) => {
+        User.destroy({
+            where: {
+                id: req.params.user_id
+            }
+        }).then(rows => {
+            res.json({rowsDeleted: rows})
+        })
+    })
 
 // app config
 app.use('/api', router);
